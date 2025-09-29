@@ -1,0 +1,229 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-29_18-52-14",
+            "content": "@@ -1,449 +0,0 @@\n-class Car:%0A    def __init__(self, gas: int, km: int):%0A        self.passageiro: int = 0%0A        self.gas: int = 0%0A        self.km: int = 0%0A%0A    def __str__ (self) -%3E str:%0A        return f%22pass:%7Bself.passageiro%7D, gas:%7Bself.gas%7D, km:%7Bself.km%7D%22%0A    %0Adef main():%0A    carro = Car(%22 %22,%22 %22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split (%22 %22)%0A        if args %5B0%5D == %22end%22:%0A            %0A%0A%0A%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-29_19-17-11",
+            "content": "@@ -30,19 +30,8 @@\n elf,\n- Pass: int,\n  gas\n@@ -60,20 +60,26 @@\n    self.\n-P\n+p\n ass\n+ageiro\n : int = \n@@ -191,20 +191,26 @@\n s:%7Bself.\n-P\n+p\n ass\n+ageiro\n %7D, gas:%7B\n@@ -271,13 +271,15 @@\n Car(\n-0,0,0\n+%22 %22,%22 %22\n )%0A  \n@@ -423,233 +423,8 @@\n d%22:%0A\n-            break%0A        elif args %5B0%5D == %22show%22:%0A            Pass: int = int(args%5B1%5D)%0A            gas: int = int(args %5B2%5D)%0A            km: int = int(args %5B3%5D)%0A            carro = Car(Pass, gas, km)%0A            print(carro)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-09-29_19-26-33",
+            "content": "@@ -656,14 +656,16 @@\n      %0A%0A%0A\n+%0A%0A\n main()\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-09-29_19-28-35",
+            "content": "@@ -471,33 +471,8 @@\n w%22:%0A\n-            print(carro)%0A\n     \n@@ -627,16 +627,42 @@\n         \n+ print(carro)%0A            \n %0A%0A%0Amain(\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-29-31",
+            "content": "@@ -270,15 +270,12 @@\n Car(\n- \n 0,\n- \n 0,\n- \n 0)%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-30-06",
+            "content": "@@ -267,19 +267,16 @@\n  = Car( \n-%22 %22\n 0, 0, 0)\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-30-24",
+            "content": "@@ -267,16 +267,19 @@\n  = Car( \n+%22 %22\n 0, 0, 0)\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-30-44",
+            "content": "@@ -519,25 +519,24 @@\n : int = int(\n- \n args%5B1%5D)%0A   \n@@ -559,17 +559,16 @@\n t = int(\n- \n args %5B2%5D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-31-23",
+            "content": "@@ -390,10 +390,8 @@\n  (%22 \n-aa\n %22)%0A \n@@ -519,24 +519,25 @@\n : int = int(\n+ \n args%5B1%5D)%0A   \n@@ -556,24 +556,25 @@\n : int = int(\n+ \n args %5B2%5D)%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-31-31",
+            "content": "@@ -190,17 +190,16 @@\n  f%22pass:\n- \n %7Bself.Pa\n@@ -208,17 +208,16 @@\n %7D, gas:%7B\n- \n self.gas\n@@ -386,16 +386,18 @@\n plit (%22 \n+aa\n %22)%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-33-05",
+            "content": "@@ -208,17 +208,16 @@\n s%7D, gas:\n- \n %7B self.g\n@@ -224,17 +224,16 @@\n as%7D, km:\n- \n %7Bself.km\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-33-10",
+            "content": "@@ -511,16 +511,164 @@\n         \n+Pass: int = int(args%5B1%5D)%0A            gas: int = int(args %5B2%5D)%0A            km: int = int(args %5B3%5D)%0A            carro = Car(Pass, gas, km)%0A           \n %0A%0A%0Amain(\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_19-35-59",
+            "content": "@@ -241,161 +241,8 @@\n m%7D%22%0A\n-    %0A    def passMax(self, amount: int):%0A        self.Pass += amount%0A        if self.Pass %3E 2:%0A            print (%22fail: limite de pessoas atingido.%22)%0A%0A%0A\n     \n@@ -503,118 +503,8 @@\n ro)%0A\n-        elif args %5B0%5D == %22enter%22:%0A            amount: int =int(args%5B1%5D)%0A            carro.passMax(amount)%0A    \n     \n@@ -512,14 +512,16 @@\n        %0A\n+%0A%0A\n main()\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-29_19-41-25",
+            "content": "@@ -715,16 +715,23 @@\n nt =int(\n+args%5B1%5D\n )%0A      \n@@ -757,16 +757,21 @@\n (amount)\n+%0A    \n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-09-29_19-41-52",
+            "content": "@@ -715,18 +715,16 @@\n nt =int(\n-()\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-43-14",
+            "content": "@@ -715,17 +715,18 @@\n nt =int(\n-0\n+()\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-43-43",
+            "content": "@@ -718,17 +718,10 @@\n =int\n- (args%5B1%5D\n+(0\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-45-08",
+            "content": "@@ -716,20 +716,23 @@\n t =int (\n-line\n+args%5B1%5D\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-45-59",
+            "content": "@@ -718,10 +718,14 @@\n =int\n-(2\n+ (line\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-46-54",
+            "content": "@@ -719,9 +719,9 @@\n int(\n-1\n+2\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-47-15",
+            "content": "@@ -392,33 +392,8 @@\n .%22)%0A\n-            self.pass = 2\n %0A%0A  \n@@ -715,17 +715,17 @@\n nt =int(\n-0\n+1\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-48-32",
+            "content": "@@ -401,25 +401,25 @@\n        self.\n-P\n+p\n ass = 2%0A%0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-48-41",
+            "content": "@@ -400,16 +400,29 @@\n         \n+self.Pass = 2\n %0A%0A    %0Ad\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-49-18",
+            "content": "@@ -731,9 +731,9 @@\n int(\n-1\n+0\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-49-39",
+            "content": "@@ -404,21 +404,8 @@\n     \n-self.Pass = 2\n %0A%0A  \n@@ -727,17 +727,17 @@\n nt =int(\n-2\n+1\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-50-03",
+            "content": "@@ -409,11 +409,12 @@\n elf.\n-age\n+Pass\n  = 2\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-50-18",
+            "content": "@@ -398,16 +398,30 @@\n         \n+  self.age = 2\n %0A%0A    %0Ad\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-50-31",
+            "content": "@@ -725,16 +725,17 @@\n nt =int(\n+2\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-50-40",
+            "content": "@@ -729,9 +729,8 @@\n int(\n-1\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-50-48",
+            "content": "@@ -400,29 +400,8 @@\n     \n-self.Pass = self.Pass\n   %0A%0A\n@@ -725,17 +725,17 @@\n nt =int(\n-2\n+1\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-51-56",
+            "content": "@@ -396,16 +396,39 @@\n         \n+self.Pass = self.Pass  \n %0A%0A    %0Ad\n@@ -750,9 +750,9 @@\n int(\n-1\n+2\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-52-36",
+            "content": "@@ -400,26 +400,8 @@\n     \n-    self.Pass -= 1\n %0A%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-55-06",
+            "content": "@@ -384,16 +384,17 @@\n atingido\n+.\n %22)%0A     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_19-55-37",
+            "content": "@@ -391,158 +391,40 @@\n o%22)%0A\n-%0A\n     \n-def leave(self, less: int):%0A        self.Pass -= less%0A        if self.Pass %3C= 0:%0A            print (%22fail: nao ha ninguem no carro%22)%0A           %0A\n+        self.Pass -= 1%0A%0A    \n %0Adef\n@@ -781,103 +781,19 @@\n nt) \n-%0A        elif args %5B0%5D == %22leave%22:%0A            less: int= int(1)%0A            carro.leave(less)%0A\n+           \n %0Amai\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-29_20-14-02",
+            "content": "@@ -390,35 +390,8 @@\n do%22)\n-%0A            self.Pass -= 1\n %0A%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-09-29_20-14-47",
+            "content": "@@ -494,17 +494,17 @@\n lf.Pass \n-=\n+%3C\n = 0:%0A   \n@@ -984,16 +984,17 @@\n nt= int(\n+1\n )%0A      \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-29_20-16-50",
+            "content": "@@ -988,11 +988,9 @@\n int(\n-0_1\n+)\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-29_20-17-09",
+            "content": "@@ -980,26 +980,27 @@\n s: int= int(\n+0_\n 1\n-)\n %0A           \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-29_20-17-17",
+            "content": "@@ -556,42 +556,8 @@\n o%22)%0A\n-            self.Pass = self.Pass%0A\n     \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-09-29_20-18-49",
+            "content": "@@ -575,19 +575,26 @@\n f.Pass =\n-= 0\n+ self.Pass\n %0A       \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-29_20-19-12",
+            "content": "@@ -498,9 +498,10 @@\n ass \n-%3C\n+==\n  0:%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-29_20-19-58",
+            "content": "@@ -580,16 +580,9 @@\n  == \n-sel.Pass\n+0\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-29_20-20-13",
+            "content": "@@ -574,21 +574,21 @@\n f.Pass =\n+=\n  sel\n-f\n .Pass%0A  \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-29_20-20-45",
+            "content": "@@ -577,12 +577,19 @@\n ass \n-+\n = \n-1\n+self.Pass\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-09-29_20-21-37",
+            "content": "class Car:\n    def __init__(self, Pass: int, gas: int, km: int):\n        self.Pass: int = 0\n        self.gas: int = 0\n        self.km: int = 0\n\n    def __str__ (self) -> str:\n        return f\"pass: {self.Pass}, gas: { self.gas}, km: {self.km}\"\n    \n    def passMax(self, amount: int):\n        self.Pass += amount\n        if self.Pass > 2:\n            print (\"fail: limite de pessoas atingido\")\n            self.Pass -= 1\n\n    def leave(self, less: int):\n        self.Pass -= less\n        if self.Pass < 0:\n            print (\"fail: nao ha ninguem no carro\")\n            self.Pass += 1\n           \n\ndef main():\n    carro = Car( 0, 0, 0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split (\" \")\n        if args [0] == \"end\":\n            break\n        elif args [0] == \"show\":\n            print(carro)\n        elif args [0] == \"enter\":\n            amount: int =int(1)\n            carro.passMax(amount) \n        elif args [0] == \"leave\":\n            less: int= int(1)\n            carro.leave(less)\n\nmain()",
+            "lines": "40"
+        }
+    ]
+}
