@@ -1,17 +1,25 @@
 class Animal:
-    def __init__(self, species: str, sound: str):
+    def __init__(self, species: str, noise: str):
         self.species: str = species
-        self.sound: str = sound
+        self.noise: str = noise
         self.age: int = 0
 
     def __str__ (self) -> str:
-        return f"{self.species}:{self.age}:{self.sound}"  
+        return f"{self.species}:{self.age}:{self.noise}"  
 
     def ageBy (self, increment: int):
         self.age += increment
         if self.age >= 4:
-            print (f"warning:{self.species} morreu")
-            self.age = self.age
+            print (f"warning: {self.species} morreu")
+            self.age = 4
+
+    def makeSound(self):
+        if self.age == 0:
+            return ("---")
+        if self.age >= 4:
+            return ("RIP")
+        else:
+            return self.noise        
 
 def main():
     bicho = Animal("","")
@@ -30,4 +38,6 @@ def main():
         elif args [0] == "grow":
             increment: int = int(args[1])
             bicho.ageBy(increment)
+        elif args[0] == "noise":
+           print (bicho.makeSound())
 main()
