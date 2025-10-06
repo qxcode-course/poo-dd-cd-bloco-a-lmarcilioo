@@ -13,10 +13,12 @@ tasks:
   animal: '{rate:100, human:amigo, alone:8, study:120}'
   carro: '{rate:100, iagen:Chatgpt_para_retirada_de_duvidas_de_sintaxe_e_erros, alone:6,
     study:240}'
+  calculadora: '{rate:100, human:amigo, iagen:copilot_e_gpt_para_retirada_de_duvidas_sobre_erros_que_nao_possuia_compreensao,
+    alone:3, study:140}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: toalha
+index: calculadora
